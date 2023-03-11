@@ -56,6 +56,8 @@
     border-radius: 10px;
     flex-direction: column;
     display:flex;
+    top: 80px;
+    position: fixed;
   }
   .show h3{
     transition: 0.5s;
@@ -93,7 +95,8 @@
     height: 300px;
     flex-direction: column;
     display:flex;
-    
+    position: fixed;
+    top: 80px;
 
   }
   .show .links,.smn .links{

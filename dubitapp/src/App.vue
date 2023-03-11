@@ -1,10 +1,5 @@
 <template>
-  <div>
-  <nav>
-    <router-link to="/">Home</router-link> |
-  </nav>
   <router-view/>
-  </div>
 </template>
 
 
@@ -15,8 +10,25 @@
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
+  
+  
+  color: white;
 }
+#homeLink{
+  color: white !important;
+  text-decoration: none;
+  font-family: "Montserrat", sans-serif;
+  transition: 0.5s;
+  cursor: pointer;
+  display: block;
+  width: 50px;
+  margin: 20px auto 0px auto;
+  font-size: 120%;
 
+}
+#homeLink:hover{
+  scale: 1.2!important;
+}
 nav {
   padding: 30px;
 }
@@ -28,5 +40,10 @@ nav a {
 
 nav a.router-link-exact-active {
   color: #42b983;
+}
+@media(max-width:500px){
+  #homeLink{
+    margin: 10px 10px 0 10px;
+  }
 }
 </style>
